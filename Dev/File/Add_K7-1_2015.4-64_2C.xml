@@ -1,0 +1,18 @@
+<MetaTaskList>
+  <Component>SignedIntAdd</Component>
+  <Target family="2">
+    <Family>Kintex7</Family>
+    <Device>xc7k70t</Device>
+    <Package>fbg484</Package>
+    <Speed>-1</Speed>
+  </Target>
+ 
+  <CompileInfo>
+    <TrialWithDifferentUcf>2</TrialWithDifferentUcf>
+    <UcfTightenFactor>0.95</UcfTightenFactor>
+  </CompileInfo>
+  <ParameterRange>
+  
+  <Range name="BitWidth" updated="yes">1:1:64</Range>
+  </ParameterRange>
+</MetaTaskList>
