@@ -1,2 +1,2 @@
 # Framewrok
-Struct of the TimingLib automacation 
+Struct of the TimingLib automatization 
