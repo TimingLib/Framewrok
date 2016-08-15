@@ -6,11 +6,11 @@ from django.template import loader
 from .models import Question
 
 '''
-def index(requst):
+def index(request):
     return HttpResponse("Hello,world.You're at the polls index.")
 
 
-def detail(requst, question_id):
+def detail(request, question_id):
     return HttpResponse("You're looking at question %s." % question_id)
 
 
