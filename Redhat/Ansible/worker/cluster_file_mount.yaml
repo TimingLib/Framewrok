@@ -1,0 +1,4 @@
+---
+- name: Mount the cifs server on the /mnt
+  command: mount -t cifs -o username=Farm,password=Labview===  //sh-rd-TimingBak/mnt  /mnt
+

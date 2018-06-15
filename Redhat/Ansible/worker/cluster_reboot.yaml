@@ -1,0 +1,8 @@
+---
+
+- name: Reboot the Machines
+  hosts: TimingLib
+  remote_user: root
+  tasks:
+      - command: reboot
+        poll: 0

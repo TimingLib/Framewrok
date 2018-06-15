@@ -1,0 +1,11 @@
+---
+ - name: Restore to the target machine
+   hosts: TimingLib
+   remote_user: root
+   tasks:
+     - include: cluster_image_restore.yaml
+#- name: Save the image of the target machine
+#  hosts: only 
+#  remote_user: root
+#  tasks:
+#     - include: cluster_image_saver.yaml

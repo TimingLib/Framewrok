@@ -1,0 +1,8 @@
+---
+- name: Show the worker version on the target machines
+  hosts: TimingLib
+  remote_user: root
+  tasks:
+      - copy: force=yes src=version.sh dest=/tmp/ owner=root group=root mode=0555
+#      - shell: /tmp/version.sh
+#      - fetch: src=/tmp/version_info  dest=/home/ni/Ansible/worker/var/ flat=yes

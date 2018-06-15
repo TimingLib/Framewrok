@@ -1,0 +1,6 @@
+---
+- name: Config the ssh connect of the compile machine
+  hosts: TimingLib 
+  remote_user: root
+  tasks:
+       - authorized_key:  user=root key="{{ lookup('file','/home/ni/.ssh/id_rsa.pub') }}"  path=/root/.ssh/authorized_keys manage_dir=no

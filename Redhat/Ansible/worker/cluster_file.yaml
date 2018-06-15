@@ -1,0 +1,31 @@
+---
+
+#- name: Scp the file on the samba server to the target machines
+#  hosts: TimingLib
+#  remote_user: root
+#  vars:
+#       src_path: /mnt/vivado2015_4.tar.gz
+#       dest_path: /home/worker/Desktop/
+#  tasks: 
+#      - include: cluster_file_mount.yaml
+#      - command: sudo cp -f "{{src_path}}" "{{dest_path}}" 
+#      - command: umount /mnt
+
+
+#- name: Del the file on the target machine
+#  hosts: TimingLib
+#  remote_user: root
+#  vars:
+#      dest_path: /tmp/clone
+#  tasks:
+#       - file: dest="{{dest_path}}" state=absent
+
+
+#- name: Copy the local file to the target machine
+#  hosts: TimingLib
+#  remote_user: root
+#  vars:
+#        src_path: /home/ni/Desktop/workerPersistedState.xml
+#        dest_path: /usr/local/natinst/nifpgacompileworker/configuration/workerPersistedState.xml
+#  tasks:
+#     - copy: force=yes  src="{{src_path}}"  dest="{{dest_path}}" owner=root mode=0755

@@ -1,0 +1,6 @@
+---
+ - name: Copy the scriot to the target machines
+   copy: force=yes src=image_clone.sh dest=/tmp/image_clone.sh mode=0555
+ - name: Excute the script to restore image
+   shell: /tmp/image_clone.sh -r RedHat_6.5-64bit-img
+   poll: 0
